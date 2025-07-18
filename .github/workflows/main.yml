@@ -39,9 +39,9 @@ jobs:
           go vet $(go list ./...)
 
       - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: v1.58 # Use uma versão específica para builds consistentes
+          version: v2.2.2 # Use uma versão específica para builds consistentes
           args: --verbose
 
   # Job para rodar os testes
